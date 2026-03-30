@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Special 💛</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+overflow:hidden;
+}
+
+.page{
+height:100vh;
+display:none;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px;
+}
+
+#page1{display:flex;background:#ff9a9e;}
+#page2{background:#fad0c4;}
+#page3{background:#a18cd1;color:white;}
+#page4{background:#fbc2eb;}
+#page5{background:#fddb92;}
+#page6{background:#d1fdff;}
+#page7{background:#ffecd2;}
+#page8{background:#cfd9df;}
+#page9{background:#ffc6ff;}
+#page10{background:#d0f4de;}
+#page11{background:#fef9c3;}
+#page12{background:#cdb4db;}
+
+/* LAST PAGE YELLOW */
+#page13{
+background:#ffe066;
+color:black;
+font-weight:bold;
+}
+
+/* PRICE TAG */
+.price{
+position:absolute;
+top:15px;
+right:15px;
+background:black;
+color:white;
+padding:14px 30px;
+border-radius:30px;
+font-size:20px;
+font-weight:bold;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:black;
+color:white;
+margin:10px;
+font-size:14px;
+}
+
+.meaning{
+display:none;
+margin-top:10px;
+font-size:14px;
+color:#222;
+}
+
+video{
+width:100%;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* FLOWERS */
+.flower{
+position:fixed;
+top:-20px;
+font-size:20px;
+animation:fall linear infinite;
+}
+@keyframes fall{
+0%{transform:translateY(-10%)}
+100%{transform:translateY(110vh)}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+<div class="price">₹10000</div>
+<h1>Hey… just wait 💛</h1>
+<p>Not everything important starts loudly… some things begin quietly.</p>
+<button onclick="showPage(2)">Start</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+<h2>Music 🎶</h2>
+<video controls>
+<source src="song.mp4">
+</video>
+<p>This isn’t just a song… it feels like something familiar.</p>
+<button onclick="showPage(3)">Next</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+<h2>Thought 💭</h2>
+<p>Sometimes, the simplest presence can make everything feel right.</p>
+<button onclick="toggle('m1')">If you didn’t understand, click on this button</button>
+<p id="m1" class="meaning">Simple: Someone’s presence makes things better.</p>
+<button onclick="showPage(4)">Next</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+<h2>Connection 💛</h2>
+<p>Not every bond needs words… some are understood in silence.</p>
+<button onclick="toggle('m2')">If you didn’t understand, click on this button</button>
+<p id="m2" class="meaning">Simple: Some connections don’t need talking.</p>
+<button onclick="showPage(5)">Next</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+<h2>Real 😌</h2>
+<p>It’s rare to find someone who feels real in a world full of fake moments.</p>
+<button onclick="toggle('m3')">If you didn’t understand, click on this button</button>
+<p id="m3" class="meaning">Simple: Real people are hard to find.</p>
+<button onclick="showPage(6)">Next</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+<h2>Energy ✨</h2>
+<p>Some people don’t just talk… they bring a whole different energy.</p>
+<button onclick="toggle('m4')">If you didn’t understand, click on this button</button>
+<p id="m4" class="meaning">Simple: Some people change the vibe.</p>
+<button onclick="showPage(7)">Next</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page" id="page7">
+<h2>Moments 😄</h2>
+<p>The best memories are made when you’re not even trying.</p>
+<button onclick="toggle('m5')">If you didn’t understand, click on this button</button>
+<p id="m5" class="meaning">Simple: Good moments happen naturally.</p>
+<button onclick="showPage(8)">Next</button>
+</div>
+
+<!-- PAGE 8 -->
+<div class="page" id="page8">
+<h2>Time ⏳</h2>
+<p>Time feels different when you’re with the right person.</p>
+<button onclick="toggle('m6')">If you didn’t understand, click on this button</button>
+<p id="m6" class="meaning">Simple: Right people make time better.</p>
+<button onclick="showPage(9)">Next</button>
+</div>
+
+<!-- PAGE 9 -->
+<div class="page" id="page9">
+<h2>Truth 💭</h2>
+<p>Some people don’t leave an impression… they leave a feeling.</p>
+<button onclick="showPage(10)">Next</button>
+</div>
+
+<!-- PAGE 10 -->
+<div class="page" id="page10">
+<h2>Smile 😊</h2>
+<p>A small smile from the right person can change your whole mood.</p>
+<button onclick="showPage(11)">Next</button>
+</div>
+
+<!-- PAGE 11 -->
+<div class="page" id="page11">
+<h2>Simple 💫</h2>
+<p>You don’t need big reasons to like someone… sometimes it just happens.</p>
+<button onclick="showPage(12)">Next</button>
+</div>
+
+<!-- PAGE 12 -->
+<div class="page" id="page12">
+<h2>Stay 💛</h2>
+<p>Some people are not temporary… they stay longer than expected.</p>
+<button onclick="showPage(13)">Last</button>
+</div>
+
+<!-- PAGE 13 -->
+<div class="page" id="page13">
+<h2>₹10000 💰</h2>
+<p>This website is made only for you 💛<br>Created by Lucky.</p>
+</div>
+
+<script>
+
+function showPage(num){
+document.querySelectorAll(".page").forEach(p=>p.style.display="none");
+document.getElementById("page"+num).style.display="flex";
+flowers();
+}
+
+function toggle(id){
+let el=document.getElementById(id);
+el.style.display = (el.style.display=="none") ? "block" : "none";
+}
+
+function flowers(){
+for(let i=0;i<15;i++){
+let f=document.createElement("div");
+f.className="flower";
+f.innerHTML="🌸";
+f.style.left=Math.random()*100+"%";
+f.style.animationDuration=(Math.random()*3+2)+"s";
+document.body.appendChild(f);
+setTimeout(()=>f.remove(),4000);
+}
+}
+
+</script>
+
+</body>
+</html>
